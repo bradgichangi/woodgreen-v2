@@ -1,0 +1,60 @@
+{
+    "courses" : {
+        "certified" : [
+            {
+                "title": "Automotive Engineering",
+                "description": "Test Description"
+            },
+            {
+                "title": "Baking Technology",
+                "description": ""
+            },
+            {
+                "title": "Fashion Design Technology",
+                "description": "This department is dedicated to provide competency -based education and practical training to individuals aspiring to pursue careers in the dynamic fields of fashion and design.<br><br>Our programs are designed to equip students with the necessary skills, knowledge, and creative abilities to succeed in the competitive industries of fashion and design."
+            },
+            {
+                "title": "Information Communication Technology",
+                "description": ""
+            },
+            {
+                "title": "Food Production",
+                "description": ""
+            },
+            {
+                "title": "Food and Beverage Sales and Service",
+                "description": ""
+            },
+            {
+                "title": "Carpentry and Joinery",
+                "description": ""
+            },
+            {
+                "title": "Hospitality Department",
+                "description": "Hospitality Department is a new department that offers world class training in Food and Beverage Production Services and Sales, catering and Accommodation, Cake Baking and Decoration.<br><br> The department offers a hands-on experience to the trainees in order to have first-hand experience which they will use when they start working or operate their own business.<br><br> On completion of the course the trainees can be absorbed in the hospitality industry as waiters, chefs, supervisors and managers in welfare catering institutions, restaurants and hotels."
+            }
+        ],
+        "diploma": [
+            {
+                "title": "Music Technology",
+                "description": "Performing arts and other related fields like Music Production and sound engineering in Kenya are growing at an exponential pace and anyone who has the proper skills plus talent stands to benefit from the developments within the industry. Our music department offers the best facilities for anyone aspiring to pursue sound engineering courses or associated fields. Our faculty consist of practicing music producers, musicians, sound engineers and other music industry professionals who will teach, mentor and direct you down the proper path to a successful career in music. Join us today and embark on your journey of becoming the best music producer.<br><br> If you are looking for musical instruments lessons in Kenya that are at an affordable rate while still offering high returns on investment in terms of acquired skills then woodgreen training institute should be your preferred institution."
+            },
+            {
+                "title": "Welding and Fabrication",
+                "description": ""
+            },
+            {
+                "title": "Electrical Engineering (Power Option)",
+                "description": "The department has adequate facilities and resources that enable our students to get hands-on experience and ready for the market. Our labs and workshops are fully furnished with a variety of necessary equipment and machinery. This enables our students develop the needed skills and expertise earliest and quickly enabling them to fit well in the working environment. This contributes much to exposing our students to real work scenarios and environments.<br><br> The department also offers short courses which are <strong>hands-on oriented skills.</strong><br><br> The department exposes the students to the growing labour market and gives then a sharper edge in the same. Our curriculum also includes a one-term attachment in the industrial field to ensure the students are fully exposed, this attachment is assessed by the teaching staff from the department."
+            },
+            {
+                "title": "Information Communication Technology",
+                "description": "ICT being a pillar of the vision 2030 the department offers training that is geared towards practical training in areas such as software development, computer hardware and associated peripherals troubleshooting, repair and maintenance, computer networks deployment and maintenance, database systems administration &amp; management, data capture, processing, storage and security among others.<br><br> The ICT department also offers basic ICT training to other students in the institute irrespective of their area of specialization. The department also extends its services to the entire college by facilitating all the ICT related services such as internet connectivity, ICT support and Computers &amp; related accessories maintenance.<br><br> The department’s objective is to produce graduates who meet the market demand and also equip trainees with relevant knowledge; skills, attitudes and values to enable them serve as professional ICT graduates."
+            },
+            {
+                "title": "Music Performance",
+                "description": ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: rgb(37, 37, 60);
+    color: white;/*#282c34; */
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    object-fit: contain;
+    height: 80px;
+    width: 70px;
+}
+
+
+.logo:hover {
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: clamp(16px, 3vw, 32px);
+    font-family: 'Manrope';
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Manrope';
+}
+
+.nav-link.active {
+    color: #cb9964;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.active-link {
+    background-color: #323266;
+    color: white;
+}
+
+
+nav li {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+nav li:hover {
+    background-color: #323266;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    /* color: white; */
+    height: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    /* gap: 1em; */
+}
+
+/* Responsive styling for screens below 900px */
+@media (max-width: 900px) {
+
+    /* Hide the nav links by default */
+
+    ul {
+        gap: 0;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        width: 100px;
+        justify-content: start;
+    }
+
+    /* Show the nav links when the menu is open */
+    nav ul.show {
+        display: flex;
+    }
+
+    .nav-link {
+        /* color: white; */
+        text-decoration: none;
+        background-color: rgb(37, 37, 60);;
+        color: white;
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+    }
+
+    nav ul li:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    /* Show the hamburger icon */
+    .hamburger {
+        display: block;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .hamburger:hover {
+        background-color: #323266;
+        color: white;
+    }
+}

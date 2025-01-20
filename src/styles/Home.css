@@ -1,0 +1,143 @@
+/* .home-main p {
+    margin-top: 40px;
+} */
+
+
+.home-main {
+    /* height: 100vh; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* margin: 20px; */
+}
+
+.home-main h2 {
+  font-size: clamp(18px, 3vw, 28px);
+}
+
+.slideshow {
+    /* height: clamp(200px, 30vw, 35vh); */
+    margin-top: 80px;
+}
+
+.view-course {
+    background-color: #cb9964;
+    color: black;
+    width: 70%;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.view-course:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.main-text {
+    background-color: white;
+    /* width: 70vw; */
+    /* border-radius: 5px; */
+    padding: 20px 10px 10px 10px;
+    /* height: 50vh; */
+}
+
+.main-text p{
+    max-width: 1200px;
+    margin: 20px 50px;
+    text-align: left;
+}
+
+.main-section {
+    background-color: rgb(37, 37, 60);
+    /* border-radius: 5px; */
+    /* width: 40vw; */
+    font-family: 'Manrope';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    padding: 20px 10px 10px 10px;
+    /* height: 50vh; */
+}
+
+.main-section p {
+    /* font-family: 'Inter'; */
+    margin: 10px;
+    /* color: white; */
+}
+
+.c {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.course-block {
+    /* background-color: green; */
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-block h3 {
+    color: white;
+    font-size: clamp(20px, 2vw, 30px);
+}
+
+
+.courses-list {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses-list li{ 
+    font-size: clamp(12px, 2vw, 16px);
+}
+
+@media (max-width: 900px) {
+
+    .home-main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+    }
+
+    .main-text {
+        width: 100%;
+    }
+
+    .main-text p {
+        margin: 10px 0;
+    }
+
+    .main-section {
+        /* margin: 20px; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-section p {
+        margin: 20px;
+    }
+
+    .view-course {
+        width: 50%;
+        height: 30px;
+    }
+}

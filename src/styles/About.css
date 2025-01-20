@@ -1,0 +1,36 @@
+.about-main {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* border-radius: 5px; */
+    /* width: 80vw; */
+    padding: 20px 10px 10px 10px;
+}
+
+.about-main p {
+    margin: 20px 50px;
+    text-align: left;
+}
+
+.mission-div {
+    background-color: red;
+    border-radius: 5px 0 0 5px;
+    animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 900px) {
+
+    .about-main p {
+        margin: 20px 0;
+    }
+}
