@@ -29,6 +29,10 @@
     width: 100%;
 }
 
+.mission-div, .amenities-div, .values-div, .vision-div {
+    border-top: 1px solid black;
+}
+
 .mission-div, .amenities-div {
     background-color: #323266;
     animation: slide-in 1s forwards;
@@ -71,6 +75,14 @@
     flex: 1;
 }
 
+.amenities-div p {
+    margin: 10px;
+}
+
+.amenities-div li {
+    display: flex;
+    align-items: center;
+}
 
 .checkmark {
     color: #cb9964;
