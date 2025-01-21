@@ -31,11 +31,11 @@
 
 .mission-div, .amenities-div, .values-div, .vision-div {
     border-top: 1px solid black;
+    animation: slide-left 1s forwards;
 }
 
 .mission-div, .amenities-div {
     background-color: #323266;
-    animation: slide-in 1s forwards;
     color: white;
     padding: 10px;
 }
@@ -88,9 +88,18 @@
     color: #cb9964;
 }
 
-@keyframes slide-in {
+@keyframes slide-left {
     from {
         transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        transform: translateX(-100%);
     }
     to {
         transform: translateX(0);

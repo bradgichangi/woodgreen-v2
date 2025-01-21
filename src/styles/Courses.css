@@ -71,6 +71,9 @@ h2 {
 }
 .course-box:hover {
     transform: scale(1.02);
+    background-color: #323266;
+    color: #cb9964;
+    font-weight: bold;
     box-shadow: 0 0 20px 8px rgba(159, 159, 159, 0.72)
 }
 
