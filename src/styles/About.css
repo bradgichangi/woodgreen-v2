@@ -5,7 +5,7 @@
     background-color: white;
     /* border-radius: 5px; */
     /* width: 80vw; */
-    padding: 20px 10px 10px 10px;
+    padding-top: 20px;
 }
 
 .about-main p {
@@ -13,10 +13,67 @@
     text-align: left;
 }
 
-.mission-div {
-    background-color: red;
-    border-radius: 5px 0 0 5px;
+.about-main ul {
+    flex-direction: column;
+    align-items: start;
+}
+
+.about-section-one {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-section-two {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.mission-div, .amenities-div {
+    background-color: #323266;
     animation: slide-in 1s forwards;
+    color: white;
+    padding: 10px;
+}
+
+.mission-div h3, .amenities-div h3 {
+    color: #cb9964;
+    margin-top: 10px;
+
+}
+
+.mission-div p {
+    padding: 30px;
+    margin: 0;
+}
+
+.vision-div, .values-div {
+    background-color: #cb9964;
+    color: white;
+    padding: 10px;
+}
+
+.vision-div h3, .values-div h3 {
+    color: #323266;
+    margin-top: 10px;
+}
+
+.vision-div p {
+    padding: 30px;
+    margin: 0;
+}
+
+.values-div {
+    width: 70%;
+}
+
+.amenities-div {
+    flex: 1;
+}
+
+
+.checkmark {
+    color: #cb9964;
 }
 
 @keyframes slide-in {
@@ -31,6 +88,26 @@
 @media (max-width: 900px) {
 
     .about-main p {
-        margin: 20px 0;
+        /* margin: 20px 0; */
+    }
+}
+
+@media (max-width: 600px) {
+    .about-section-one {
+        flex-direction: column;
+    }
+
+    .about-section-two {
+        flex-direction: column-reverse;
+    }
+
+    .values-div {
+        width: auto;
+    }
+
+    .about-main ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

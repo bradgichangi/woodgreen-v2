@@ -1,4 +1,7 @@
-import './Modal.css'
+import './Modal.css';
+import closeButton from '../images/close-circle.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
 function Modal({ item, onClose }) {
 
@@ -7,9 +10,11 @@ function Modal({ item, onClose }) {
             <div className="modal-content">
                 <h2>{item.title}</h2>
                 <p dangerouslySetInnerHTML={{ __html: item.description }}></p>
-                <button onClick={onClose} style={{ marginTop: "10px" }}>
+                <FontAwesomeIcon className='close-button' onClick={onClose} icon={faWindowClose} size="2x" color="red" />
+                {/* <img  src={closeButton}/> */}
+                {/* <button onClick={onClose} style={{ marginTop: "10px" }}>
                     X
-                </button>
+                </button> */}
             </div>
         </div>
     );

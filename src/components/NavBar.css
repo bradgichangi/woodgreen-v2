@@ -75,6 +75,10 @@ nav {
     color: white;
 }
 
+ul li:last-child .nav-link {
+    border-radius: 0 0 5px 5px;
+  }
+
 .active-link {
     background-color: #323266;
     color: white;

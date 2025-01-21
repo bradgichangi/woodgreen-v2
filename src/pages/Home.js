@@ -3,7 +3,11 @@ import '../styles/Home.css';
 import Slideshow from '../components/Slideshow';
 import image1 from '../images/students.PNG';
 import image2 from '../images/students_2.PNG';
+import tvetLogo from '../images/tvet-logo.png';
+import cdaccLogo from '../images/cdacc-logo.png';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import courseData from '../data/course_data.json'
 
 
@@ -15,8 +19,12 @@ function Home() {
     ];
 
     const navigate = useNavigate();
+    const location = useLocation(); // Get the current path
+    const [activeTab, setActiveTab] = useState(location.pathname);
 
     const redirect = () => {
+        console.log('/courses')
+        setActiveTab('/courses');
         navigate('/courses');
     };
 
@@ -76,6 +84,14 @@ function Home() {
                     </div> */}
                     
                 
+                </div>
+                <div className='exam-bodies'>
+                    <h2>Examining Bodies</h2>
+                    <div className='bodies'>
+                        <img src={tvetLogo} alt='TVET Logo' />
+                        <img src={cdaccLogo} alt='CDACC Logo'/>
+                    </div>
+                    
                 </div>
             </main>
 
