@@ -37,16 +37,24 @@
     padding: 5px;
 }
 
+.modal-header {
+    display: flex;
+    justify-content: center;
+}
+
 .modal-content p {
     text-align: left;
+    margin-top: 20px;
 }
 
 .modal-content h2 {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    /* position: absolute; */
+    /* top: 20px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     max-width: 88%;
+    font-size: clamp(20px, 2vw, 30px);
+    margin: 0 50px;
 }
 
 .modal-backdrop {

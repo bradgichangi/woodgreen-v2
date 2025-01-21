@@ -27,13 +27,13 @@ function Courses() {
 
                 <section className='course-section'>
 
-                    <h2>Certified</h2>
+                    <h3>Certified</h3>
                     <div className='courses-block'>
                     {courseData['courses']['certified'].map((item) => (<div className='course-box' onClick={() => handleOpenModal(item)}><img src={image1}></img>
                         <p>{item['title']}</p></div>))}
                     </div>
 
-                    <h2>Diploma</h2>
+                    <h3>Diploma</h3>
                     <div className='courses-block'>
                     {courseData['courses']['diploma'].map((item) => (<div className='course-box' onClick={() => handleOpenModal(item)}><img src={image1}></img>
                         <p>{item['title']}</p></div>))}

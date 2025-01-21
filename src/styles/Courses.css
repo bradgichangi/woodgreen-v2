@@ -51,6 +51,11 @@ h2 {
     flex-direction: column;
 }
 
+.course-section h3 {
+    color: #323266;
+    margin-top: 2rem;
+}
+
 .courses-block {
     display: flex;
     flex-direction: row;

@@ -8,9 +8,12 @@ function Modal({ item, onClose }) {
     return (
         <div className="modal-backdrop">
             <div className="modal-content">
-                <h2>{item.title}</h2>
+                <div className='modal-header'>
+                    <h2>{item.title}</h2>
+                    <FontAwesomeIcon className='close-button' onClick={onClose} icon={faWindowClose} size="2x" />
+                </div>
+ 
                 <p dangerouslySetInnerHTML={{ __html: item.description }}></p>
-                <FontAwesomeIcon className='close-button' onClick={onClose} icon={faWindowClose} size="2x" color="red" />
                 {/* <img  src={closeButton}/> */}
                 {/* <button onClick={onClose} style={{ marginTop: "10px" }}>
                     X
